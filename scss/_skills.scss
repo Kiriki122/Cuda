@@ -31,7 +31,6 @@
     }
 
     &__name {
-        font-size: 1.333rem;
-        font-weight: 700;
+        @include bold-headers;
     }
 }
