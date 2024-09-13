@@ -3,21 +3,9 @@
 .about {
     padding-top: 105px;
     padding-bottom: 125px;
-    background-color: #17c2a4;
-    &__container {
-    }
-
-    &__title {
-        color: #ffffff;
-    }
-
-    &__description {
-        color: #ffffff;
-    }
-
-    &__services {
-    }
+    background-color: $about-bg-color;
 }
+
 .services {
     display: flex;
     justify-content: space-between;
@@ -38,16 +26,15 @@
     }
 
     &__name {
-        color: #ffffff;
-        font-size: 1.333rem;
-        font-weight: 700;
+        @include bold-headers;
+        color: $text-white-color;
         text-transform: uppercase;
         margin-bottom: 12px;
     }
 
-    &__description {
-        color: #ffffff;
-        font-size: 0.889rem;
-        font-weight: 300;
+    &__summary {
+        @include light-paragraph;
+        color: $text-white-color;
+        text-align: center;
     }
 }

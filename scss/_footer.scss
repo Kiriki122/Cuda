@@ -1,32 +1,28 @@
 //Footer
 
 .footer {
-    background-color: #344b8e;
+    background-color: $footer-bg-color;
     padding: 40px 0;
 
-    &__container {
-    }
-
     &__links {
-        margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     &__link {
-        font-size: 1.333rem;
+        @include bold-headers;
         font-weight: 600;
-        color: #ffffff;
+        color: $text-white-color;
 
         transition: 0.3s color ease-out;
 
         &:hover {
-            color: #30bae7;
+            color: $button-blue-color;
         }
 
         &:active {
-            color: darken(#30bae7, 20%);
+            color: darken($button-blue-color, 20%);
         }
     }
 }

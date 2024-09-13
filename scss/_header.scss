@@ -1,7 +1,7 @@
 //Header
 
 .header {
-    background-color: #87509c;
+    background-color: $hero-bg-color;
     padding: 60px 0;
 
     &__container {
@@ -14,34 +14,28 @@
         fill: #ffffff;
     }
 
-    &__nav {
-    }
-
     &__list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         column-gap: 8px;
     }
 }
 .list {
-    &__item {
-    }
-
     &__link {
         padding: 10px 16px;
         border-radius: 3px;
         font-size: 0.889rem;
         text-transform: uppercase;
-        color: #ffffff;
+        color: $text-white-color;
         transition: 0.3s background-color ease-out;
 
         &:hover {
-            background-color: #643a79;
+            background-color: darken($hero-bg-color, 10%);
         }
 
         &:active {
-            background-color: lighten(#643a79, 10%);
+            background-color: darken($hero-bg-color, 15%);
         }
     }
 }

@@ -3,24 +3,17 @@
 .contact {
     padding-top: 105px;
     padding-bottom: 110px;
-    background-color: #3c5499;
+    background-color: $contact-bg-color;
+
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    &__title {
-        color: #ffffff;
-    }
-
-    &__description {
-        color: #ffffff;
-
-        & > * {
-            color: #ffffff;
-            text-decoration: underline;
-        }
+    &__description > * {
+        color: $text-white-color;
+        text-decoration: underline;
     }
 
     &__form {
@@ -50,12 +43,12 @@
     &__email,
     &__message {
         padding: 15px 23px;
-        background-color: #273a71;
+        background-color: $form-bg-color;
         border-radius: 4px;
-        color: #ffffff;
+        color: $text-white-color;
 
         &::placeholder {
-            color: #ffffff;
+            color: $text-white-color;
         }
     }
 
@@ -69,21 +62,14 @@
     }
 
     &__btn {
-        padding: 20px 60px;
-        background-color: #30bae7;
-        border-radius: 4px;
-        box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
-
-        color: #ffffff;
-        font-weight: 700;
-
-        transition: background-color 0.3s ease-out;
+        @include button;
+        background-color: $button-blue-color;
 
         &:hover {
-            background-color: darken(#30bae7, 5%);
+            background-color: darken($button-blue-color, 10%);
         }
         &:active {
-            background-color: darken(#30bae7, 10%);
+            background-color: darken($button-blue-color, 15%);
         }
     }
 }

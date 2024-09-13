@@ -1,12 +1,9 @@
 //Hero
 
 .hero {
-    background-color: #87509c;
+    background-color: $hero-bg-color;
     padding-top: 75px;
     padding-bottom: 145px;
-
-    &__container {
-    }
 
     &__block {
         display: flex;
@@ -17,29 +14,23 @@
     }
 
     &__greeting {
+        @include bold-headers;
         font-size: 2.333rem;
-        color: #ffffff;
-        text-align: center;
-        font-weight: 700;
-        line-height: normal;
+        color: $text-white-color;
     }
 
     &__link {
+        @include button;
         padding: 20px 80px;
-        background-color: #eb7d4b;
-        border-radius: 4px;
-        box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+        background-color: $button-orange-color;
 
-        color: #ffffff;
         font-weight: 700;
 
-        transition: background-color 0.3s ease-out;
-
         &:hover {
-            background-color: darken(#eb7d4b, 10%);
+            background-color: darken($button-orange-color, 10%);
         }
         &:active {
-            background-color: darken(#eb7d4b, 20%);
+            background-color: darken($button-orange-color, 20%);
         }
     }
 }

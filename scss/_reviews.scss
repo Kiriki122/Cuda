@@ -3,22 +3,13 @@
 .reviews {
     padding-top: 105px;
     padding-bottom: 110px;
-    background-color: #d74680;
-    &__container {
-    }
-
-    &__title {
-        color: #ffffff;
-    }
+    background-color: $reviews-bg-color;
 
     &__description {
-        color: #ffffff;
         margin-bottom: 80px;
     }
-
-    &__feedback {
-    }
 }
+
 .feedback {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -39,26 +30,24 @@
         border-radius: 50%;
     }
 
-    &__response {
-    }
-
     &__quote {
+        @include regular-text;
         font-size: 1.167rem;
         font-style: italic;
-        color: #ffffff;
+        color: $text-white-color;
         margin-bottom: 32px;
         line-height: normal;
     }
 
     &__name {
-        font-size: 1.333rem;
-        font-weight: 700;
-        color: #ffffff;
-        line-height: normal;
+        @include bold-headers;
+        text-align: left;
+        color: $text-white-color;
     }
 
     &__position {
-        color: #ffdd99;
+        @include regular-text;
+        color: $text-yellow-acent-color;
         line-height: normal;
     }
 }

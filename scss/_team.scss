@@ -3,27 +3,20 @@
 .team {
     padding-top: 105px;
     padding-bottom: 125px;
-    background-color: #e7f1f8;
+    background-color: $team-bg-color;
 
-    &__container {
-    }
-
-    &__title {
-        color: #3c4761;
-    }
-
+    &__title,
     &__description {
-        color: #3c4761;
-    }
-
-    &__cards {
+        color: $text-light-black-color;
     }
 }
+
 .cards {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     column-gap: 80px;
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -38,25 +31,24 @@
     }
 
     &__name {
-        font-size: 1.333rem;
-        font-weight: 700;
-        color: #27283d;
-        line-height: normal;
-        text-align: center;
+        @include bold-headers;
+        color: $text-light-black-color;
+        text-transform: capitalize;
     }
 
     &__position {
-        font-size: 0.889rem;
+        @include light-paragraph;
+        font-weight: 400;
         text-align: center;
-        color: #30bae7;
+        color: $text-blue-acent-color;
         margin-bottom: 9px;
     }
 
-    &__description {
-        font-size: 0.889rem;
-        font-weight: 300;
+    &__summary {
+        @include light-paragraph;
         text-align: center;
-        color: #3c4761;
+        color: $text-light-black-color;
+        margin-bottom: 40px;
     }
 
     &__links {
