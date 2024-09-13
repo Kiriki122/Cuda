@@ -1,0 +1,53 @@
+//About
+
+.about {
+    padding-top: 105px;
+    padding-bottom: 125px;
+    background-color: #17c2a4;
+    &__container {
+    }
+
+    &__title {
+        color: #ffffff;
+    }
+
+    &__description {
+        color: #ffffff;
+    }
+
+    &__services {
+    }
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 80px;
+    &__block {
+        max-width: 310px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img {
+        margin-bottom: 60px;
+        max-height: 134px;
+        height: 100%;
+    }
+
+    &__name {
+        color: #ffffff;
+        font-size: 1.333rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        color: #ffffff;
+        font-size: 0.889rem;
+        font-weight: 300;
+    }
+}

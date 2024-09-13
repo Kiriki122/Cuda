@@ -1,0 +1,32 @@
+//Footer
+
+.footer {
+    background-color: #344b8e;
+    padding: 40px 0;
+
+    &__container {
+    }
+
+    &__links {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__link {
+        font-size: 1.333rem;
+        font-weight: 600;
+        color: #ffffff;
+
+        transition: 0.3s color ease-out;
+
+        &:hover {
+            color: #30bae7;
+        }
+
+        &:active {
+            color: darken(#30bae7, 20%);
+        }
+    }
+}

@@ -1,0 +1,88 @@
+//Team
+
+.team {
+    padding-top: 105px;
+    padding-bottom: 125px;
+    background-color: #e7f1f8;
+
+    &__container {
+    }
+
+    &__title {
+        color: #3c4761;
+    }
+
+    &__description {
+        color: #3c4761;
+    }
+
+    &__cards {
+    }
+}
+.cards {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 80px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        aspect-ratio: 1/1;
+        max-width: 200px;
+        border-radius: 50%;
+        margin-bottom: 35px;
+    }
+
+    &__name {
+        font-size: 1.333rem;
+        font-weight: 700;
+        color: #27283d;
+        line-height: normal;
+        text-align: center;
+    }
+
+    &__position {
+        font-size: 0.889rem;
+        text-align: center;
+        color: #30bae7;
+        margin-bottom: 9px;
+    }
+
+    &__description {
+        font-size: 0.889rem;
+        font-weight: 300;
+        text-align: center;
+        color: #3c4761;
+    }
+
+    &__links {
+        display: flex;
+        column-gap: 12px;
+        & > a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background-color: #bdd1df;
+            border-radius: 50%;
+            transition: 0.3s background-color ease-out;
+
+            &:hover {
+                background-color: darken(#bdd1df, 10%);
+            }
+
+            &:active {
+                background-color: darken(#bdd1df, 20%);
+            }
+
+            & > * {
+                fill: #ffffff;
+            }
+        }
+    }
+}
