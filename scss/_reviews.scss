@@ -17,6 +17,11 @@
     grid-column-gap: 80px;
     grid-row-gap: 120px;
 
+    @media screen and (max-width: 992px) {
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+
     &__item {
         display: flex;
         justify-content: space-between;
