@@ -18,8 +18,11 @@
     grid-row-gap: 120px;
 
     @media screen and (max-width: 992px) {
-        grid-column-gap: 40px;
-        grid-row-gap: 60px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        max-width: 60%;
+        margin: 0 auto;
     }
 
     &__item {
@@ -43,6 +46,10 @@
         color: $text-white-color;
         margin-bottom: 32px;
         line-height: normal;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 10px;
+        }
     }
 
     &__name {

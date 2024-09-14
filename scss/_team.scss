@@ -17,7 +17,12 @@
     align-items: flex-start;
     column-gap: 20px;
     @media screen and (max-width: 992px) {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, 1fr);
         justify-content: center;
+        row-gap: 40px;
+        column-gap: 60px;
     }
 
     &__item {
@@ -34,6 +39,10 @@
         width: 100%;
         border-radius: 50%;
         margin-bottom: 35px;
+        @media screen and (max-width: 992px) {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
     }
 
     &__name {
@@ -55,6 +64,10 @@
         text-align: center;
         color: $text-light-black-color;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 992px) {
+            margin-bottom: 15px;
+        }
     }
 
     &__links {

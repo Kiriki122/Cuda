@@ -17,6 +17,10 @@
         @include bold-headers;
         font-size: 2.333rem;
         color: $text-white-color;
+
+        @media screen and (max-width: 992px) {
+            font-size: 2.222rem;
+        }
     }
 
     &__link {

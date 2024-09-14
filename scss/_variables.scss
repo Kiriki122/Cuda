@@ -38,6 +38,10 @@ $button-blue-color: #30bae7;
     position: relative;
     margin-bottom: 25px;
 
+    @media screen and (max-width: 992px) {
+        font-size: 2.111rem;
+    }
+
     &::after {
         content: "";
         width: 87px;
@@ -58,10 +62,16 @@ $button-blue-color: #30bae7;
     color: $text-white-color;
     line-height: normal;
     margin-bottom: 70px;
+    @media screen and (max-width: 992px) {
+        margin-bottom: 40px;
+    }
 }
 
 @mixin bold-headers {
     font-size: 1.333rem;
+    @media screen and (max-width: 992px) {
+        font-size: 1.222rem;
+    }
     font-weight: 700;
     text-align: center;
     line-height: normal;
