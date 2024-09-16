@@ -5,6 +5,11 @@
     padding-top: 75px;
     padding-bottom: 145px;
 
+    @media only screen and (max-width: 992px) {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
     &__block {
         display: flex;
         flex-direction: column;
@@ -20,6 +25,10 @@
 
         @media only screen and (max-width: 992px) {
             font-size: 2.222rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            font-size: 1.7rem;
         }
     }
 

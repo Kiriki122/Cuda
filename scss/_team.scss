@@ -5,6 +5,11 @@
     padding-bottom: 125px;
     background-color: $team-bg-color;
 
+    @media only screen and (max-width: 992px) {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+
     &__title,
     &__description {
         color: $text-light-black-color;

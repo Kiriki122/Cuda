@@ -5,6 +5,11 @@
     padding-bottom: 110px;
     background-color: $reviews-bg-color;
 
+    @media only screen and (max-width: 992px) {
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+
     &__description {
         margin-bottom: 80px;
     }
