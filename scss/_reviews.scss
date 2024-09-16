@@ -17,7 +17,7 @@
     grid-column-gap: 80px;
     grid-row-gap: 120px;
 
-    @media screen and (max-width: 992px) {
+    @media only screen and (max-width: 992px) {
         display: flex;
         flex-direction: column;
         row-gap: 50px;
@@ -47,7 +47,7 @@
         margin-bottom: 32px;
         line-height: normal;
 
-        @media screen and (max-width: 992px) {
+        @media only screen and (max-width: 992px) {
             margin-bottom: 10px;
         }
     }

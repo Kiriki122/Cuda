@@ -44,7 +44,7 @@
 
     &__demonstration {
         margin-bottom: 75px;
-        @media screen and (max-width: 992px) {
+        @media only screen and (max-width: 992px) {
             margin-bottom: 50px;
         }
     }
@@ -68,7 +68,7 @@
     grid-column-gap: 20px;
     grid-row-gap: 50px;
 
-    @media screen and (max-width: 992px) {
+    @media only screen and (max-width: 992px) {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
@@ -84,7 +84,7 @@
     &__img {
         max-width: 541px;
         width: 100%;
-        @media screen and (max-width: 992px) {
+        @media only screen and (max-width: 992px) {
             max-width: 400px;
         }
     }

@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: flex-start;
     column-gap: 20px;
-    @media screen and (max-width: 992px) {
+    @media only screen and (max-width: 992px) {
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(2, 1fr);
@@ -30,7 +30,7 @@
 
     &__img {
         margin-bottom: 60px;
-        @media screen and (max-width: 992px) {
+        @media only screen and (max-width: 992px) {
             margin-bottom: 35px;
             scale: 0.85;
         }
