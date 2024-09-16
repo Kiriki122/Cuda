@@ -11,9 +11,9 @@ if (burger && menu) {
 }
 menuLinks.forEach((item) =>
     item.addEventListener("click", () => {
-        burger.classList.toggle("_active");
-        menu.classList.toggle("_active");
-        body.classList.toggle("_lock");
+        burger.classList.remove("_active");
+        menu.classList.remove("_active");
+        body.classList.remove("_lock");
     }),
 );
 

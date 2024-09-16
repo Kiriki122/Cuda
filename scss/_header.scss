@@ -1,6 +1,9 @@
 //Header
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
     background-color: $hero-bg-color;
     padding: 60px 0;
     @media only screen and (max-width: 992px) {
@@ -43,7 +46,7 @@
         column-gap: 8px;
 
         @media only screen and (max-width: 992px) {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             right: 0;
