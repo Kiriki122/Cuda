@@ -5,13 +5,13 @@
     top: 0;
     z-index: 2;
     background-color: $hero-bg-color;
-    padding: 60px 0;
+    padding: 40px 0;
     @media only screen and (max-width: 992px) {
-        padding: 40px 0;
+        padding: 30px 0;
     }
 
     @media only screen and (max-width: 576px) {
-        padding: 30px 0;
+        padding: 25px 0;
     }
 
     &__container {
@@ -54,7 +54,8 @@
 
             flex-direction: column;
             justify-content: center;
-            row-gap: 34px;
+            row-gap: 5vh;
+            margin-top: 10%;
 
             overflow: hidden;
             background-color: $hero-bg-color;
@@ -77,6 +78,10 @@
         text-transform: uppercase;
         color: $text-white-color;
         transition: 0.3s background-color ease-out;
+
+        @media only screen and (max-width: 992px) {
+            font-size: 5vh;
+        }
 
         &:hover {
             background-color: darken($hero-bg-color, 10%);
