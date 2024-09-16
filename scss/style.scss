@@ -9,6 +9,12 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    &._lock {
+        overflow: hidden;
+    }
+}
+
 [class*="__container"] {
     max-width: 1080px;
     margin: 0 auto;

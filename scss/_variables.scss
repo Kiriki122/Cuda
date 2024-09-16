@@ -24,8 +24,13 @@ $button-blue-color: #30bae7;
     color: $text-white-color;
     font-size: 1rem;
     font-weight: 600;
+    text-wrap: nowrap;
 
     transition: background-color 0.3s ease-out;
+
+    @media only screen and (max-width: 425px) {
+        padding: 20px 40px;
+    }
 }
 
 @mixin section-title {
@@ -54,7 +59,7 @@ $button-blue-color: #30bae7;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 50px;
+        top: 125%;
     }
 }
 

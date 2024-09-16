@@ -10,6 +10,11 @@
         padding-bottom: 100px;
     }
 
+    @media only screen and (max-width: 576px) {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
     &__description {
         margin-bottom: 80px;
     }
@@ -24,7 +29,7 @@
     grid-row-gap: 120px;
 
     @media only screen and (max-width: 992px) {
-        grid-template-columns: repeat(1, minmax(532px, 65%));
+        grid-template-columns: repeat(1, minmax(58%, 532px));
         grid-template-rows: repeat(4, 1fr);
         row-gap: 50px;
     }

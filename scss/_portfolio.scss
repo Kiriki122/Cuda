@@ -10,6 +10,11 @@
         padding-bottom: 100px;
     }
 
+    @media only screen and (max-width: 576px) {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
@@ -31,6 +36,14 @@
         align-items: center;
         column-gap: 10px;
         margin-bottom: 60px;
+
+        @media only screen and (max-width: 576px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 10px;
+            margin-bottom: 40px;
+        }
     }
 
     &__button {
@@ -98,5 +111,6 @@
         @include regular-text;
         text-transform: uppercase;
         line-height: normal;
+        text-align: center;
     }
 }
