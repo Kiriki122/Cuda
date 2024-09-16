@@ -17,9 +17,7 @@ menuLinks.forEach((item) =>
 const selection = document.querySelectorAll(".portfolio__button");
 selection.forEach((item) =>
     item.addEventListener("click", () => {
-        selection.forEach((item) =>
-            item.classList.remove("portfolio__button-active"),
-        );
-        item.classList.add("portfolio__button-active");
+        selection.forEach((item) => item.classList.remove("_active"));
+        item.classList.add("_active");
     }),
 );

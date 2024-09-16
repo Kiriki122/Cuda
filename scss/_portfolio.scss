@@ -37,7 +37,7 @@
         color: $text-black-color;
 
         transition: 0.3s background-color ease-out;
-        &-active {
+        &._active {
             background-color: #ffffff;
         }
     }
