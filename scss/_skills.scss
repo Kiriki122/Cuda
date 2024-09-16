@@ -11,17 +11,18 @@
 }
 
 .progress {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(1, 1fr);
     justify-content: space-between;
-    align-items: center;
     column-gap: 20px;
     @media only screen and (max-width: 992px) {
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 180px);
         grid-template-rows: repeat(2, 1fr);
         justify-content: center;
         row-gap: 40px;
-        column-gap: 60px;
+        column-gap: 40px;
     }
 
     &__card {
@@ -35,10 +36,6 @@
     }
 
     &__bar {
-        @media only screen and (max-width: 992px) {
-            scale: 0.8;
-        }
-
         & > text {
             font-size: 2.778rem;
             font-weight: 300;
