@@ -75,16 +75,16 @@
         color: $text-white-color;
         transition: 0.3s background-color ease-out;
 
+        @media only screen and (max-width: 992px) {
+            font-size: 36px;
+        }
+
         &:hover {
             background-color: darken($hero-bg-color, 10%);
         }
 
         &:active {
             background-color: darken($hero-bg-color, 15%);
-        }
-
-        @media only screen and (max-width: 992px) {
-            font-size: 36px;
         }
     }
 
