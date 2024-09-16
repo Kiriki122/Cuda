@@ -51,7 +51,7 @@
 
             flex-direction: column;
             justify-content: center;
-            row-gap: 30px;
+            row-gap: 54px;
 
             overflow: hidden;
             background-color: $hero-bg-color;
@@ -60,12 +60,15 @@
     }
 
     &__item {
+        width: 80%;
+        text-align: center;
     }
 
     &__link {
+        display: block;
         padding: 10px 16px;
         border-radius: 3px;
-        font-size: 0.889rem;
+        font-size: 36px;
         text-transform: uppercase;
         color: $text-white-color;
         transition: 0.3s background-color ease-out;
