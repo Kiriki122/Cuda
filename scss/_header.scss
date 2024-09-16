@@ -60,15 +60,17 @@
     }
 
     &__item {
-        width: 80%;
-        text-align: center;
+        @media only screen and (max-width: 992px) {
+            width: 80%;
+            text-align: center;
+        }
     }
 
     &__link {
         display: block;
         padding: 10px 16px;
         border-radius: 3px;
-        font-size: 36px;
+        font-size: 0.889rem;
         text-transform: uppercase;
         color: $text-white-color;
         transition: 0.3s background-color ease-out;
@@ -79,6 +81,10 @@
 
         &:active {
             background-color: darken($hero-bg-color, 15%);
+        }
+
+        @media only screen and (max-width: 992px) {
+            font-size: 36px;
         }
     }
 
