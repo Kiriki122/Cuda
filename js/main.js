@@ -14,7 +14,7 @@ menuLinks.forEach((item) =>
         burger.classList.remove("_active");
         menu.classList.remove("_active");
         body.classList.remove("_lock");
-    }),
+    })
 );
 
 const selection = document.querySelectorAll(".portfolio__button");
@@ -22,5 +22,12 @@ selection.forEach((item) =>
     item.addEventListener("click", () => {
         selection.forEach((item) => item.classList.remove("_active"));
         item.classList.add("_active");
-    }),
+    })
 );
+
+const contactForm = document.getElementById("contact__form");
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you for your message!");
+    contactForm.reset();
+});
